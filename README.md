@@ -11,7 +11,7 @@ Clone
 
 Add line to your `.zshrc`
 
-`"source <your_dir>/zsh-lambda-theme/lambda.zsh-theme"`
+`"source <your_dir>/zsh-lambda-theme/zsh-lambda.zsh-theme"`
 
 ### zap
 Add line to your `.zshrc`
