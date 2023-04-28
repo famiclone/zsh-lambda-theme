@@ -2,7 +2,7 @@
 
 It is a port of the `lambda` theme from ohmyzsh for pure zsh. The theme includes a prompt that displays the current directory, the git branch (if applicable) and repository status
 
-![Preview](preview.jpg)
+![Preview](preview.png)
 
 ## Install
 ### zsh
