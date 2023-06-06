@@ -16,8 +16,15 @@ function git_status {
   fi
 }
 
+function venv_status {
+  if [[ -n "$VIRTUAL_ENV" ]]; then
+    venv_name=$(basename "$VIRTUAL_ENV")
+    echo "%{$fg[red]%}($venv_name) "
+  fi
+}
+
 function set_prompt {
-  PROMPT="λ %~/ $(git_branch)$(git_status)%{$reset_color%} "
+  PROMPT="λ %~/ $(venv_status)$(git_branch)$(git_status)%{$reset_color%} "
 }
 
 precmd_functions+=( set_prompt )
