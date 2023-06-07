@@ -24,7 +24,7 @@ function venv_status {
 }
 
 function set_prompt {
-  PROMPT="λ %~/ $(venv_status)$(git_branch)$(git_status)%{$reset_color%} "
+  PROMPT="%{$fg[bold]%}%{$bg[yellow]%}%{$fg[black]%}(λ)%{$reset_color%} ~/ $(venv_status)$(git_branch)$(git_status)%{$reset_color%} "
 }
 
 precmd_functions+=( set_prompt )
